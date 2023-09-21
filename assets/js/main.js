@@ -1,7 +1,7 @@
 const pokemonList = document.getElementById('pokemonList')
 const loadMoreButton = document.getElementById('loadMore')
 
-const limit = 5;
+const limit = 20;
 let offset = 0;
 
 function loadPokemonItens(offset, limit){
@@ -34,4 +34,24 @@ loadMoreButton.addEventListener('click', () => {
     offset += limit
     loadPokemonItens(offset, limit)
 })
+
+/* Code constraining the limit of cards 
+const maxRecords = 11;
+loadMoreButton.addEventListener('click', () => {
+    offset += limit
+
+    const qtdRecordNextPage = offset + limit
+
+    if(qtdRecordNextPage >= maxRecords){
+        const newLimit = maxRecords - offset
+        loadPokemonItens(offset, newLimit)
+
+        loadMoreButton.parentElement.removeChild(loadMoreButton)
+    } else {
+        loadPokemonItens(offset, limit)
+    }
+
+})
+*/
+
     
