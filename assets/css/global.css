@@ -9,7 +9,7 @@ body {
 
 .content {
     padding: 1rem;
-    background-color: white;
+    background-color: lightgoldenrodyellow;
     height: 100vh;
     width: 100vw;
 }
@@ -26,5 +26,25 @@ body {
 
 .content h1{
     margin: 0;
+    color: #f7c505;
+    -webkit-text-stroke-width: 1.8px;
+    -webkit-text-stroke-color: #385aa3;
+    font-size: 4.3rem;
+    padding-right: 1rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+}
+
+#logo {
+    position: relative;
+    opacity: .3;
+    transform: rotate(145deg);
+    height: 100px;
 }
 
