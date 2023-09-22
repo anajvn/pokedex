@@ -10,7 +10,7 @@ body {
 .content {
     padding: 1rem;
     background-color: lightgoldenrodyellow;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
 }
 
@@ -26,12 +26,15 @@ body {
 
 .content h1{
     margin: 0;
-    color: #f7c505;
-    -webkit-text-stroke-width: 1.8px;
-    -webkit-text-stroke-color: #385aa3;
-    font-size: 4.3rem;
     padding-right: 1rem;
 }
+
+#main-title {
+    color: #f7c505;
+    font-size: 4.5rem;
+    -webkit-text-stroke-width: 1.8px;
+    -webkit-text-stroke-color: #385aa3;
+} 
 
 header {
     display: flex;

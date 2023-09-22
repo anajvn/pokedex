@@ -45,7 +45,7 @@
     font-size: .825rem;
 }
 
- .pokemon .name {
+.pokemon .name {
     margin-bottom: .5rem;
     text-transform: capitalize;
 }
